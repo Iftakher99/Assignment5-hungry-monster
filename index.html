@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Perfect Plate</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="input-group mt-5 sticky-top">
+        <input
+          id="food"
+          type="text"
+          class="form-control"
+          placeholder="Find Your Food Here"
+        />
+        <button onclick="findFood()" class="btn btn-success" type="button">
+          Search
+        </button>
+      </div>
+
+      <section
+        id="description"
+        class="d-flex justify-content-center align-items-center"
+      ></section>
+
+      <section id="showOutput" class="row container">
+        <div class="row text-center">
+          <h1 class="mt-5">The Recipes</h1>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
