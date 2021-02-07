@@ -9,7 +9,10 @@ function findFood() {
     .then((data) => {
       showItems(data);
       recipeDetails(data);
-    });
+    })
+    .catch((error) =>
+      alert(" Thanks For Your  Query this item not available right now")
+    );
 }
 
 function showItems(data) {
